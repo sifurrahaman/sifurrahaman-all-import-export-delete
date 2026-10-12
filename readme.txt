@@ -1,4 +1,4 @@
-=== Sifurrahaman All Import, Export & Bulk Deletion ===
+=== SR All Import, Export & Bulk Deletion ===
 Contributors: sifurrahaman
 Donate link: https://sifurrahaman.com/donate/
 Tags: all import, export, csv xlsx xml importer, custom fields, custom post type
@@ -13,7 +13,7 @@ Import and export CSV, XLSX and XML data into WordPress post types with custom f
 
 == Description ==
 
-Sifurrahaman All Import, Export & Bulk Deletion helps administrators import structured data into WordPress post types using CSV, XLSX and XML files & bulk post deletion.
+SR All Import, Export & Bulk Deletion helps administrators import structured data into WordPress post types using CSV, XLSX and XML files & bulk post deletion.
 
 The plugin provides flexible field mapping for standard WordPress fields, custom post meta, JetEngine fields, ACF fields and taxonomies. It also supports featured image importing, batch processing, import progress management, data export and bulk post deletion.
 
@@ -57,7 +57,7 @@ The plugin does not require JetEngine or ACF and can be used with standard WordP
 
 The complete source code for this plugin is publicly available on GitHub:
 
-https://github.com/sifurrahaman/sifurrahaman-all-import-export-delete
+https://github.com/sifurrahaman/sr-all-import-export-delete
 
 The plugin's JavaScript and CSS source files are included in the repository in human-readable form for review, study, and modification.
 
@@ -67,7 +67,7 @@ Development contributions and bug reports are welcome.
 
 == Installation ==
 
-1. Install Sifurrahaman All Import, Export & Bulk Deletion from Plugins > Add New, or upload the plugin ZIP through Plugins > Add New > Upload Plugin.
+1. Install SR All Import, Export & Bulk Deletion from Plugins > Add New, or upload the plugin ZIP through Plugins > Add New > Upload Plugin.
 2. Activate the plugin.
 3. Open SR All Import from the WordPress admin menu.
 4. Select the WordPress post type you want to import into.
@@ -79,7 +79,7 @@ Development contributions and bug reports are welcome.
 
 == Custom Fields ==
 
-Sifurrahaman All Import, Export & Bulk Deletion uses WordPress post meta APIs for custom field data.
+SR All Import, Export & Bulk Deletion uses WordPress post meta APIs for custom field data.
 
 When JetEngine is active, the plugin can detect available JetEngine field definitions associated with the selected post type.
 
@@ -161,7 +161,7 @@ The source URL is not used as the primary duplicate identifier and source URLs a
 
 == Export ==
 
-CPT Fields Importer can export WordPress post data in the following formats:
+SR All Import, Export & Delete plugin can export WordPress post data in the following formats:
 
 * CSV
 * XLSX
@@ -181,7 +181,7 @@ Administrators should review the selected post type and deletion quantity carefu
 
 == Privacy ==
 
-Sifurrahaman All Import, Export & Bulk Deletion does not send usage, analytics or tracking data to an external service.
+SR All Import, Export & Bulk Deletion does not send usage, analytics or tracking data to an external service.
 
 Source files uploaded for an import are stored temporarily in the WordPress uploads directory while the import job is being processed.
 
@@ -208,7 +208,7 @@ Bootstrap is used for responsive administrator interface styling.
 
 No.
 
-Sifurrahaman All Import, Export & Bulk Deletion can work with standard WordPress post types and custom post meta without JetEngine or ACF.
+SR All Import, Export & Bulk Deletion can work with standard WordPress post types and custom post meta without JetEngine or ACF.
 
 When JetEngine or ACF is active, their available field definitions can also be detected for field mapping.
 
@@ -282,10 +282,10 @@ The plugin imports structured data from CSV, XLSX and XML files. It does not scr
 
 = 1.1.1 =
 
-* Reformatted admin/js/admin.js into a readable, multiline JavaScript file.
+** Updated the plugin display name is SR All Import, Export & Bulk Deletion & slug sr-all-import-export-delete.
+* JS & CSS file are human-readable.
 * Added a Source Code and Development section to readme.txt.
 * Documented the official Bootstrap source repository.
-* Verified the ZIP archive integrity and JavaScript syntax.
 
 
 = 1.1.0 =
@@ -316,8 +316,10 @@ The plugin imports structured data from CSV, XLSX and XML files. It does not scr
 
 = 1.1.1 =
 
-* Distributed the custom administrator JavaScript in human-readable form.
-* Documented the JavaScript source location and third-party Bootstrap source repository.
+** Updated the plugin display name is SR All Import, Export & Bulk Deletion & slug sr-all-import-export-delete.
+* JS & CSS file are human-readable.
+* Added a Source Code and Development section to readme.txt.
+* Documented the official Bootstrap source repository.
 
 = 1.1.0 =
 
