@@ -9,7 +9,7 @@ Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Import and export CSV, XLSX and XML data into WordPress post types with custom fields and taxonomy mapping. Also bulk deletation data for any CPT.
+Import and export CSV, XLSX and XML data into WordPress post types with custom fields and taxonomy mapping. Also supports bulk deletion of data for any CPT.
 
 == Description ==
 
@@ -55,11 +55,15 @@ The plugin does not require JetEngine or ACF and can be used with standard WordP
 
 == Source Code and Development ==
 
-The plugin's custom administrator JavaScript is distributed in human-readable form in `admin/js/admin.js`. This is the actual JavaScript file loaded by the plugin; it is not a minified build, so no JavaScript build step is required to inspect or modify it. Changes to this file can be tested directly in a WordPress development installation.
+The plugin also includes the Bootstrap stylesheet at `admin/css/bootstrap.min.css`. Bootstrap is a third-party library. Its source code and project documentation are publicly available in the official repository: https://github.com/twbs/bootstrap. Refer to that repository for the original source and build instructions.
 
-The plugin also includes the Bootstrap stylesheet at `admin/css/bootstrap.min.css`. Bootstrap is a third-party library. Its source code and project documentation are publicly available in the official repository: https://github.com/twbs/bootstrap . Refer to that repository for the original source and build instructions.
+The complete source code for this plugin is publicly available on GitHub:
 
-The plugin's PHP source is included in the distributed plugin package under `includes/` and in the main plugin file.
+https://github.com/sifurrahaman/sifurrahaman-all-import-export-delete
+
+The plugin's JavaScript and CSS source files are included in the repository in human-readable form for review, study, and modification.
+
+Development contributions and bug reports are welcome.
 
 == Installation ==
 
@@ -287,7 +291,7 @@ The plugin imports structured data from CSV, XLSX and XML files. It does not scr
 
 = 1.1.0 =
 
-* Updated the plugin display name, for the current Sifurrahaman All Import, Export & Bulk Deletion release.
+* Updated the plugin display name for the current Sifurrahaman All Import, Export & Bulk Deletion release.
 * Updated the text domain & slug to sifurrahaman-all-import-export-delete
 * Finalized WordPress.org compatibility and code-standard cleanup.
 * Improved administrator-facing functionality and documentation.
