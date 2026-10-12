@@ -12,7 +12,7 @@
  * License: GPL-2.0-or-later
  */
 if (!defined('ABSPATH')) exit;
-define('SRWAI_VERSION','1.1.1');
+define('SRWAI_VERSION','1.1.2');
 define('SRWAI_FILE',__FILE__);
 define('SRWAI_DIR',plugin_dir_path(__FILE__));
 define('SRWAI_URL',plugin_dir_url(__FILE__));

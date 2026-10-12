@@ -13,13 +13,16 @@ class SRWAI_Importer {
  private static function check(){if(!current_user_can('manage_options'))wp_send_json_error('Unauthorized.',403);check_ajax_referer('srwai_nonce','nonce');}
  private static function post_value($key,$default=''){
  
+  // phpcs:ignore WordPress.Security.NonceVerification.Missing -- Every AJAX callback calls self::check(), which verifies the nonce and capability before reading request data.
   if(!isset($_POST[$key]))return $default;
  
+  // phpcs:ignore WordPress.Security.NonceVerification.Missing, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Nonce verification is centralized in self::check(); sanitize the scalar value immediately below.
   $value=wp_unslash($_POST[$key]);
-  return is_scalar($value)?(string)$value:$default;
+  return is_scalar($value)?sanitize_text_field((string)$value):$default;
  }
  private static function uploaded_file($key){
  
+  // phpcs:ignore WordPress.Security.NonceVerification.Missing, WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- Nonce verification is centralized in self::check(); upload fields receive upload-specific validation in upload_source().
   return isset($_FILES[$key])&&is_array($_FILES[$key])?$_FILES[$key]:array();
  }
  private static function sanitize_mapping($mapping,$job){
@@ -84,7 +87,7 @@ class SRWAI_Importer {
   );
   remove_filter('upload_dir',$upload_dir_filter);
 
-  if(!empty($result['error']))throw new Exception('Could not save the uploaded source file: '.(string)$result['error']);
+  if(!empty($result['error']))throw new Exception('Could not save the uploaded source file: '.esc_html((string)$result['error']));
   if(empty($result['file']))throw new Exception('Could not save the uploaded source file. Check the uploads directory permissions.');
 
   return array($result['file'],$ext,basename($result['file']));

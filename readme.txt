@@ -9,7 +9,7 @@ Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Import and export CSV, XLSX and XML data into WordPress post types with custom fields and taxonomy mapping. Also supports bulk deletion of data for any CPT.
+Import and export CSV, XLSX and XML data into WordPress post types with custom fields and taxonomy mapping. Also bulk deletation post any CPT.
 
 == Description ==
 
@@ -55,13 +55,13 @@ The plugin does not require JetEngine or ACF and can be used with standard WordP
 
 == Source Code and Development ==
 
-The plugin also includes the Bootstrap stylesheet at `admin/css/bootstrap.min.css`. Bootstrap is a third-party library. Its source code and project documentation are publicly available in the official repository: https://github.com/twbs/bootstrap. Refer to that repository for the original source and build instructions.
-
 The complete source code for this plugin is publicly available on GitHub:
 
 https://github.com/sifurrahaman/sifurrahaman-all-import-export-delete
 
 The plugin's JavaScript and CSS source files are included in the repository in human-readable form for review, study, and modification.
+
+The plugin also includes the Bootstrap stylesheet at `admin/css/bootstrap.min.css`. Bootstrap is a third-party library. Its source code and project documentation are publicly available in the official repository: https://github.com/twbs/bootstrap. Refer to that repository for the original source and build instructions.
 
 Development contributions and bug reports are welcome.
 
@@ -197,7 +197,8 @@ The plugin does not collect personal information from users for external analyti
 
 The administrator interface includes Bootstrap CSS distributed under the MIT License.
 
-Source: https://github.com/twbs/bootstrap
+Source project:
+https://github.com/twbs/bootstrap
 
 Bootstrap is used for responsive administrator interface styling.
 
@@ -284,15 +285,14 @@ The plugin imports structured data from CSV, XLSX and XML files. It does not scr
 * Reformatted admin/js/admin.js into a readable, multiline JavaScript file.
 * Added a Source Code and Development section to readme.txt.
 * Documented the official Bootstrap source repository.
-* Updated the plugin version and readme stable tag to 1.1.1.
 * Verified the ZIP archive integrity and JavaScript syntax.
+
 
 = 1.1.0 =
 
 * Updated the plugin display name for the current Sifurrahaman All Import, Export & Bulk Deletion release.
 * Updated the text domain & slug to sifurrahaman-all-import-export-delete
 * Finalized WordPress.org compatibility and code-standard cleanup.
-* Improved administrator-facing functionality and documentation.
 
 = 1.0.25 =
 
