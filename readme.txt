@@ -197,8 +197,7 @@ The plugin does not collect personal information from users for external analyti
 
 The administrator interface includes Bootstrap CSS distributed under the MIT License.
 
-Source project:
-https://github.com/twbs/bootstrap
+Source: https://github.com/twbs/bootstrap
 
 Bootstrap is used for responsive administrator interface styling.
 
@@ -288,7 +287,6 @@ The plugin imports structured data from CSV, XLSX and XML files. It does not scr
 * Updated the plugin version and readme stable tag to 1.1.1.
 * Verified the ZIP archive integrity and JavaScript syntax.
 
-
 = 1.1.0 =
 
 * Updated the plugin display name for the current Sifurrahaman All Import, Export & Bulk Deletion release.
@@ -320,8 +318,6 @@ The plugin imports structured data from CSV, XLSX and XML files. It does not scr
 
 * Distributed the custom administrator JavaScript in human-readable form.
 * Documented the JavaScript source location and third-party Bootstrap source repository.
-
-
 
 = 1.1.0 =
 
